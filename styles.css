@@ -1,69 +1,40 @@
-/* Tech Connect Student Club - Fredaejah Ward */
-:root {
-  --navy: #173b63;
-  --blue: #245e95;
-  --light-blue: #e6f0fa;
-  --text: #24364b;
-  --white: #ffffff;
-  --border: #b7cde0;
-}
+/* Fredaejah Ward - Tech Connect Student Club */
 * { box-sizing: border-box; }
-body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--text); background: var(--white); line-height: 1.6; }
-.container { width: min(1100px, 90%); margin: 0 auto; }
-h1, h2, h3 { color: var(--navy); line-height: 1.25; }
-h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 0 0 1rem; }
-h2 { font-size: 1.6rem; margin: 0 0 1rem; }
-h3 { font-size: 1.15rem; }
-p { margin: 0 0 1rem; }
-a { color: var(--blue); text-underline-offset: 4px; }
-a:hover { color: var(--navy); }
-a:focus-visible, summary:focus-visible { outline: 3px solid #a65e00; outline-offset: 4px; }
-.site-header { border-bottom: 1px solid var(--border); background: var(--white); }
-.header-content { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 1.1rem 0; }
-.club-name { color: var(--navy); font-size: 1.3rem; font-weight: bold; text-decoration: none; }
-.club-name span { display: block; font-size: .85rem; font-weight: normal; }
-nav { display: flex; flex-wrap: wrap; gap: .5rem 1.4rem; }
-nav a { padding: .4rem 0; color: var(--navy); text-decoration: none; border-bottom: 2px solid transparent; }
-nav a:hover, nav a[aria-current="page"] { border-color: var(--blue); }
-.hero, .page-heading { background: var(--light-blue); padding: 3rem 0; }
-.hero-content { display: grid; grid-template-columns: 1.3fr 1fr; gap: 3rem; align-items: center; }
-.eyebrow { color: var(--blue); font-weight: bold; }
-.button { display: inline-block; padding: .7rem 1.1rem; margin-top: .4rem; background: var(--blue); color: var(--white); text-decoration: none; border-radius: 5px; }
-.button:hover { background: var(--navy); color: var(--white); }
-.code-example { background: var(--navy); color: var(--white); padding: 1.8rem; border-radius: 8px; }
-.code-label { font-weight: bold; }
-pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: .9rem; line-height: 1.8; }
-.code-example p:last-child { color: #cadff0; margin-bottom: 0; }
-.section { padding: 2.6rem 0; }
-.two-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
-hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
-ul, ol { padding-left: 1.5rem; margin-top: .5rem; }
-li { padding-left: .25rem; margin-bottom: .65rem; }
-.benefits li::marker { color: var(--blue); }
-.highlight { background: var(--light-blue); padding: 1.5rem; border-left: 4px solid var(--blue); }
-.note, .footer-note { font-size: .9rem; }
-.resource-band { background: #f1f6fb; padding: 2.4rem 0; }
-.resource-links { list-style: square; }
-.notice { padding: 1rem; background: var(--light-blue); border-left: 4px solid var(--blue); margin-bottom: 2rem; }
-.activity-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 3rem; }
-.activity-grid article { padding-bottom: 1rem; border-bottom: 1px solid var(--border); }
-.resource-list article { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
-.resource-list a::after { content: " (external resource)"; font-size: .8rem; }
-details { border-bottom: 1px solid var(--border); padding: 1rem 0; }
-summary { cursor: pointer; font-weight: bold; color: var(--navy); }
-details p { margin: .8rem 0 0; }
-footer { background: var(--navy); color: var(--white); padding: 1.5rem 0; }
-footer p { margin-bottom: .3rem; }
-.skip-link { position: absolute; left: -9999px; }
-.skip-link:focus { position: fixed; left: 1rem; top: 1rem; padding: .7rem; background: white; z-index: 10; }
-/* Stack content on smaller screens and keep navigation easy to tap. */
-@media (max-width: 760px) {
-  .header-content { flex-direction: column; align-items: flex-start; gap: .6rem; }
-  nav { width: 100%; gap: .5rem 1.2rem; }
-  nav a { min-height: 44px; display: inline-flex; align-items: center; }
-  .hero-content, .two-columns, .activity-grid { grid-template-columns: 1fr; gap: 1.8rem; }
-  .hero, .page-heading { padding: 2rem 0; }
-  .section { padding: 2rem 0; }
-  .code-example { padding: 1.3rem; }
-  .resource-list a { overflow-wrap: anywhere; }
+body {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+    background-color: #f0f5fa;
+    color: #26384a;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+header {
+    background-color: #214e78;
+    color: white;
+    padding: 25px;
+    border-radius: 8px 8px 0 0;
+}
+h1 { margin-top: 0; line-height: 1.2; }
+main { background-color: white; padding: 25px; }
+section { margin-bottom: 28px; }
+h2, h3 { color: #214e78; }
+h2 { font-size: 24px; }
+h3 { font-size: 18px; }
+li { margin-bottom: 8px; }
+ul { list-style-type: square; }
+li::marker { color: #214e78; }
+hr { border: 0; border-top: 1px solid #b8ccdf; margin: 25px 0; }
+a { color: #145b96; }
+a:hover { color: #103550; text-decoration: none; }
+a:focus-visible { outline: 2px solid #145b96; outline-offset: 3px; }
+.resources { background-color: #e9f2fa; padding: 16px; }
+.resources h2 { margin-top: 0; }
+footer { padding: 15px; text-align: center; background-color: #d9e7f3; }
+@media (max-width: 600px) {
+    body { margin: 0; padding: 0; }
+    header { border-radius: 0; }
+    header, main { padding: 20px; }
+    h1 { font-size: 28px; }
+    h2 { font-size: 22px; }
 }
